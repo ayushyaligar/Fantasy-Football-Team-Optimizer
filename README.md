@@ -2,7 +2,7 @@
 
 A full-stack web application that helps Fantasy Premier League managers make smarter transfer decisions using real-time player data, a custom scoring engine, and a live interactive pitch UI.
 
-![Squad View](C:\Users\herea\Desktop\FplOpt\FPL_LandingPage.png)
+![Squad View](FPL_LandingPage.png)
 
 ---
 
