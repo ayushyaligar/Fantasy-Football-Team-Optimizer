@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>FPL Transfer Optimizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero">
+    <h1>FPL Transfer Optimizer</h1>
+  </div>
+
+  <div class="app">
+
+    <div class="layout">
+      <div id="pitch" class="pitch"></div>
+
+      <div id="sidePanel" class="side-panel">
+        <!-- Persistent cost display (never destroyed) -->
+        <div class="card cost-card">
+          <h2 class="card-title">Total Squad Cost</h2>
+          <div id="squadCost" class="total-cost">£0.0</div>
+        </div>
+
+        <div id="panelContent">
+          <div class="card selection-card">
+            <h2 class="card-title">Selected Slot</h2>
+            <div id="slotSelection" class="slot-selection-text">
+              Click a slot on the pitch to select it.
+            </div>
+            <div id="validationMessage" class="validation-message" aria-live="polite"></div>
+          </div>
+
+          <div class="card controls-card">
+            <h2 class="card-title">Controls</h2>
+            <div class="controls">
+              <label class="control-field">
+                <span>Money in Bank</span>
+                <input type="number" id="moneyInBank" step="0.1" value="0">
+              </label>
+
+              <label class="control-field">
+                <span>Transfers Left</span>
+                <input type="number" id="transfersLeft" value="1" min="1" max="5">
+              </label>
+
+              <button id="optimizeBtn" class="primary-button">Optimize</button>
+            </div>
+          </div>
+
+          <div class="card results-card">
+            <h2 class="card-title">Results</h2>
+            <div id="results" class="results"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
